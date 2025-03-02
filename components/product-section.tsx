@@ -63,7 +63,6 @@ export default function ProductSection() {
                 className={styles.productImage}
               />
               <h3 className={styles.productName}>{product.name}</h3>
-              <p className={styles.productDescription}>{product.description}</p>
               <p className={styles.productPrice}>${product.price.toFixed(2)}</p>
               <button className={styles.buyButton} onClick={() => openCheckout(product)}>
                 Buy Now
