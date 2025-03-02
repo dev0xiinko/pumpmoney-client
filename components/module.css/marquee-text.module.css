@@ -1,0 +1,37 @@
+.marqueeContainer {
+  background-color: var(--neon-green);
+  padding: 0.75rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+
+.marqueeContent {
+  display: flex;
+  will-change: transform;
+  min-width: 100%;
+  animation: marquee-scroll 10s linear infinite;
+}
+
+.marqueeItems {
+  display: flex;
+}
+
+.marqueeItems span {
+  font-size: 3rem;
+  padding: 0 1rem;
+}
+
+.separator {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

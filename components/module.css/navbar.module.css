@@ -1,0 +1,123 @@
+/* Header */
+.header {
+  width: 100%;
+  background-color: var(--neon-green);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin: 1rem auto;
+  max-width: 80rem;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo img {
+  width: 8rem;
+}
+
+/* Desktop Navigation */
+.desktopNav {
+  display: flex;
+  gap: 2rem;
+}
+
+.desktopNav a {
+  color: black;
+  font-size: 1.25rem;
+  transition: opacity 0.3s, transform 0.2s;
+}
+
+.desktopNav a:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* Mobile Menu Button */
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+/* Mobile Navigation */
+.mobileNav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Open Mobile Menu */
+.mobileNavOpen {
+  right: 0;
+}
+
+/* Close Button */
+.closeButton {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Mobile Navigation Links */
+.mobileNav nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobileNav a {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  color: var(--neon-green);
+}
+
+.mobileNav a:hover {
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .mobileMenuButton {
+    display: block;
+  }
+
+  .desktopNav {
+    display: none;
+  }
+
+  .logo img {
+    width: 10rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo img {
+    width: 14rem;
+  }
+
+  .desktopNav a {
+    font-size: 1.5rem;
+  }
+}

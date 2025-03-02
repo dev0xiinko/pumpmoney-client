@@ -1,0 +1,23 @@
+:root {
+  --neon-green: #00ff66;
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+body {
+  font-family: "Luckiest Guy", cursive;
+  color: var(--foreground);
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
