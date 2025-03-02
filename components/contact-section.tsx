@@ -8,7 +8,7 @@ export default function ContactSection() {
         <h2 className={styles.sectionTitle}>Connect With Us</h2>
         <div className={styles.socialLinks}>
           <a
-            href="https://instagram.com/pumpmoney"
+            href="https://instagram.com/pumpmoney_"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialLink}
@@ -17,7 +17,7 @@ export default function ContactSection() {
             <span>Instagram</span>
           </a>
           <a
-            href="https://twitter.com/pumpmoney"
+            href="https://twitter.com/pumpmoney_"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialLink}
