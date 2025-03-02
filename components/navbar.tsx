@@ -15,7 +15,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className={styles.logo}>
           <Link href="/">
-            <Image src="/nav-logo.svg" alt="PUMPMONEY MERCH" width={600} height={70} priority />
+            <Image src="/nav-logo.svg" alt="PUMPMONEY MERCH" width={600} height={50} priority />
           </Link>
         </div>
 
