@@ -5,6 +5,7 @@ import ProductSection from "@/components/product-section"
 import ContactSection from "@/components/contact-section"
 import styles from "./page.module.css"
 import Footer from "@/components/footer"
+import ServicesSection from "@/components/services-section"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <MarqueeText />
+      <ServicesSection />
       <ProductSection />
       <ContactSection />
       <Footer />
