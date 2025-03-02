@@ -15,6 +15,7 @@
 
 .marqueeItems {
   display: flex;
+  color:black;
 }
 
 .marqueeItems span {
