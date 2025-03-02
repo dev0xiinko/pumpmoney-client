@@ -1,12 +1,6 @@
 import styles from "../components/module.css/services-section.module.css"
 
 export default function ServicesSection() {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById("contact-section")
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" })
-    }
-  }
 
   return (
     <section className={styles.servicesSection}>
